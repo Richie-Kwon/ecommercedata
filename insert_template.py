@@ -2,7 +2,7 @@ import pandas as pd
 import requests
 
 # End Point of AWS
-URL = "https://04iywy4kqg.execute-api.eu-west-2.amazonaws.com/beta/test-resource"
+URL = ""
 
 # Reading dataset as dataFrame(df)
 df = pd.read_csv('testdata.csv', sep=',')
