@@ -1,13 +1,28 @@
 # ecommerce-
+Establishing data pipe lines for e-commerce data in AWS to 1) process transactions ad provde purcahse history (or summary) to customers and 2) to analyse the data for business analytics such as average sales, the most popular units, and total number of invoices 
 
-Establishing data pipe lines for e-commerce data in AWS
 
 # Dataset
-
+E-commerce data from http://archive.ics.uci.edu/ml/index.php : 8 Columns and 541909 rows
+ 
+Columns
 - InvoiceNO: 6 digit integer and unique value for each transaction
-  (Prefix 'c' means cancellation and Prefix 'A' means adjust bad debt)
--
+  Calleation and bad debt(Prefix 'c' means cancellation and Prefix 'A' means adjust bad debt) won't be used 
+- StockCode 
+- Description 
+- Quantity 
+- InvoiceDate
+- UnitPrice
+- CustomerID 
+- Country
 
 
-![image](https://user-images.githubusercontent.com/56697877/116882266-25e8af00-ac1c-11eb-8e2a-ee7f3bbc5fb9.png)
+# Streaming process
+The layout of the streaming process
+![image](https://user-images.githubusercontent.com/56697877/116911256-84bf2000-ac3e-11eb-94b0-29f16651a35a.png)
 
+
+
+# Batch process
+The layout of the batch process
+![image](https://user-images.githubusercontent.com/56697877/116911315-9b657700-ac3e-11eb-8603-a25b5fb612de.png)
