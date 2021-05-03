@@ -19,7 +19,7 @@ Columns
 
 # Streaming process
 The layout of the streaming process
-![image](https://user-images.githubusercontent.com/56697877/116911256-84bf2000-ac3e-11eb-94b0-29f16651a35a.png)
+![image](https://user-images.githubusercontent.com/56697877/116921770-606a4000-ac4c-11eb-98a9-9159b1d17ba6.png)
 
 
 
