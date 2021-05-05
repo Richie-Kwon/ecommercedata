@@ -1,0 +1,5 @@
+* Copy options *
+json 's3://(your intermediate bucket name)/jsonpaths.json'
+
+* Copy command *
+COPY (your table name in the cluster) FROM 's3://(your intermediate bucket name)/<manifest>' CREDENTIALS 'aws_iam_role=arn:aws:iam::<aws-account-id>:role/<role-name>' MANIFEST json 's3://(your intermediate bucket name)/jsonpaths.json';
