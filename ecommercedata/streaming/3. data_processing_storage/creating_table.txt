@@ -1,0 +1,10 @@
+create table firehosetransactions(
+	InvoiceNo int,
+	StockCode varchar(200),
+	Description varchar(200),
+	Quantity int,	
+	InvoiceDate varchar(200),
+	UnitPrice float,
+	CustomerID varchar(200),  	
+ 	Country varchar(200)
+);
