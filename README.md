@@ -28,4 +28,4 @@ The layout of the streaming process
 The layout of the batch process
 ￼![image](https://user-images.githubusercontent.com/56697877/117211277-b2e46180-adf0-11eb-9dfe-61f357dbbaca.png)
 
-￼￼￼
+￼￼

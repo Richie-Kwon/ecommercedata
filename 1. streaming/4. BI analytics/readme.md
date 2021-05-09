@@ -33,3 +33,4 @@ Run boto3.py with AWS Key and AWS secret
 3. Go to create a request menu
 4. Enter URL and add Key (InvoiceNo & Stockcode) and values
 5. Get a response from DynameDB with new URL
+6. The same result can be found when running transaction.py
