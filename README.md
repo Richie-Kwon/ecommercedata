@@ -35,6 +35,8 @@
 
 * Sub-process
 
+* AWS Cognito <br />
+For security, AWS congnito can be used to access API gateway with a token in this streaming process([Cognito](https://github.com/Richie-Kwon/ecommercedata/tree/main/3.%20cognito))
 
 ## Batch process
 * Description <br /> 
