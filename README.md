@@ -27,17 +27,37 @@ ecommerce data
 
  Column | Description
  --- | ---
- InvoiceNO | ‣  Object type <br /> ‣  6 digits and unique value for each transaction <br /> ‣  Cancellation (Prefix 'c') and bad debt(Prefix 'A') won't be used |
- StockCode | ‣  Object type <br /> ‣  Number or combination of alphabet and number
- Description | ‣  Object type <br /> ‣  1454 null vallues included |
+ InvoiceNO | ‣ Uniquely assigned to each transaction <br /> ‣  Object type <br /> ‣  6 digits and unique value for each transaction <br /> ‣  Cancellation (Prefix 'c') and bad debt(Prefix 'A') won't be used; quantity is less than zero(negative number)|
+ StockCode | ‣  Uniquely assigned to each item <br /> ‣ Object type <br /> ‣  Number or combination of alphabet and number
+ Description | ‣ Features of each item <br /> ‣  Object type <br /> ‣  1454 null vallues included |
  Quantity | ‣  Quantity of items per transaction <br /> ‣  Int64 <br /> ‣  Less than 0 in case of cacellantion and bad debt <br /> ‣  Cacellantion and bad debt will be filterd out in the the lambda function ([test](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test.py))|
- InvoiceDate | ‣ date and time when each transaction was made <br /> ‣  Object type <br /> ‣  Data type will be changed to datetime in the lambda function ([writeToS3](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/writeToS3.py)) |
+ InvoiceDate | ‣ Date and time when each transaction was made <br /> ‣  Object type <br /> ‣  Data type will be changed to datetime in the lambda function ([writeToS3](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/writeToS3.py)) |
  UnitPrice | ‣ Unit price in sterling <br /> ‣  float64|
  CustomerID | ‣ Uniquely assigned to each customer <br /> ‣  float64 <br /> ‣ 135080 null values included; null values will be replaced with "Unknown" in the lambda function ([test-cleaning](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test-cleaning.py)) |
  Country | ‣  Name of the country where customers reside   <br /> ‣ Object type |
  
 ## Tools <a name="Tools"></a>
-* 
+
+* Connect
+ ‣ API gateway 
+ 
+* Buffer
+ ‣ AWS Kinesis
+
+* Processing <br /> 
+ ‣
+
+* Storage
+ ‣ S3: Data in the type of parquet can be stored <br /> 
+ ‣ Redshift: <br /> 
+ ‣ DynamoDB:  <br /> 
+ 
+* BI analytics 
+ ‣ Tableau: connected to redshift <br /> 
+ ‣ AWS Athena : connected to S3 <br /> 
+ ‣ Jupyter notebook : connected to S3 <br /> 
+ ‣ Zepplin notebook: connected to EMR in batch process <br /> 
+
 
 ## Streaming process <a name="Streamingprocess"></a>
 * Description <br /> 
