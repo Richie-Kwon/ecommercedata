@@ -38,4 +38,10 @@
 
 
 ## Run Insert_tempalte.py
-&ensp;&ensp;Put down the URL (endpoint) in the python code ([insert_template.py](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/1.%20data_%20ingestion/insert_template.py)) and run the code to ingest data
+&ensp;&ensp;Put down the URL (endpoint) in the python code ([insert_template.py](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/1.%20data_%20ingestion/insert_template.py)) and run the code to ingest data<br />
+
+## Check data in the Cloudwatch
+&ensp;&ensp; Able to check the data ingested in the cloudwatch like below
+```
+[{'kinesis': {'kinesisSchemaVersion': '1.0', 'partitionKey': 'string', 'sequenceNumber': '49616695351193684279319279313106287000663283539153780738', 'data': 'eyJJbnZvaWNlTm8iOiA1MzYzNjUsICJTdG9ja0NvZGUiOiAiODUxMjNBIiwgIkRlc2NyaXB0aW9uIjogIldISVRFIEhBTkdJTkcgSEVBUlQgVC1MSUdIVCBIT0xERVIiLCAiUXVhbnRpdHkiOiA2LCAiSW52b2ljZURhdGUiOiAiMTIvMS8yMDEwIDg6MjYiLCAiVW5pdFByaWNlIjogMi41NSwgIkN1c3RvbWVySUQiOiAxNzg1MC4wLCAiQ291bnRyeSI6ICJVbml0ZWQgS2luZ2RvbSJ9', 'approximateArrivalTimestamp': 1617028654.079}, 'eventSource': 'aws:kinesis', 'eventVersion': '1.0', 'eventID': 'shardId-000000000000:49616695351193684279319279313106287000663283539153780738', 'eventName': 'aws:kinesis:record', 'invokeIdentityArn': 'arn:aws:iam::653486444134:role/service-role/test-cleaning-role-et6p3cu2', 'awsRegion': 'eu-west-2', 'eventSourceARN': 'arn:aws:kinesis:eu-west-2:653486444134:stream/APIdata'}]
+```
