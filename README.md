@@ -74,7 +74,7 @@ ecommerce data
 * Sub-process <br />
  &ensp;1. [Data ingestion](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/1.%20data_%20ingestion): Ingest data in CSV into AWS Kinesis through API gateway <br />
  &ensp;2. [Data cleaning](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/2.%20data_cleaning): Clean data or change data type <br /> 
- &ensp;3. [Data processing & Storage](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/3.%20data_processing_storage): Bring and send data from Kinesis to storage(S3 or Redshift) and process data if necessary <br /> 
+ &ensp;3. [Data processing & Storage](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/3.%20data_processing_storage): Bring and send data from Kinesis to storage(S3 or Redshift) and process data <br /> 
  &ensp;4. [BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/4.%20BI%20analytics): Create connections to BI tools like Tableau and Athena and Send Queries to DynamoDB <br /> 
 
 * AWS Cognito <br />
