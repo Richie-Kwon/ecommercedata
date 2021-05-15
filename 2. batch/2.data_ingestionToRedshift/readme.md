@@ -42,5 +42,5 @@ create table batchprocess(
 
 ![image](https://user-images.githubusercontent.com/56697877/118375672-1887d900-b5bb-11eb-825b-5dcf7325aad7.png)
 
-6. Check ETL result
+6. Check ETL result in the Redshift
 ![image](https://user-images.githubusercontent.com/56697877/118376120-fba0d500-b5bd-11eb-834d-2bbbb7e53176.png)
