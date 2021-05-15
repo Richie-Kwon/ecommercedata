@@ -89,8 +89,10 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 * The layout of the batch process
 ![image](https://user-images.githubusercontent.com/56697877/118084976-81076800-b3b9-11eb-9ba5-87dc49c87d0a.png)
 
-
-
+* Sub-process <br />
+&ensp;1. [data_ingestionToS3](https://github.com/Richie-Kwon/ecommercedata/tree/main/2.%20batch/1.%20data_ingestionToS3)<br />
+&ensp;2. [data_ingestionToRedshift](https://github.com/Richie-Kwon/ecommercedata/tree/main/2.%20batch/2.data_ingestionToRedshift)<br />
+&ensp;3. [BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/2.%20batch/3.%20BI%20analytics)<br />
 
 ## Conclusion <a name="Conclustion"></a>
 
