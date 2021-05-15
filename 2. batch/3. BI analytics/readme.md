@@ -12,6 +12,7 @@
 
 3. Access the Zeppelin
 Open new browser with [URL](http://master-public-dns-name:8890/)
+![image](https://user-images.githubusercontent.com/56697877/118376103-d90ebc00-b5bd-11eb-9c29-f10a4c3bd9be.png)
 
 ## Connect Redshift with PowerBI
 Please refer to the steaming process:[BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/4.%20BI%20analytics)
