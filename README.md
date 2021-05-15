@@ -27,13 +27,13 @@ ecommerce data
 
  Column | Description
  --- | ---
- InvoiceNO | ‣ Uniquely assigned to each transaction <br /> ‣  Object type <br /> ‣  6 digits and unique value for each transaction <br /> ‣  Cancellation (Prefix 'c') and bad debt(Prefix 'A') won't be used; quantity is less than zero(negative number)|
+ InvoiceNO | ‣ Uniquely assigned to each transaction <br /> ‣  Object type <br /> ‣  6 digits and unique value for each transaction <br /> ‣  Cancellation (Prefix 'c') and bad debt(Prefix 'A') won't be used: negative number |
  StockCode | ‣  Uniquely assigned to each item <br /> ‣ Object type <br /> ‣  Number or combination of alphabet and number
  Description | ‣ Features of each item <br /> ‣  Object type <br /> ‣  1454 null vallues included |
  Quantity | ‣  Quantity of items per transaction <br /> ‣  Int64 <br /> ‣  Less than 0 in case of cacellantion and bad debt <br /> ‣  Cacellantion and bad debt will be filterd out in the the lambda function ([test](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test.py))|
  InvoiceDate | ‣ Date and time when each transaction was made <br /> ‣  Object type <br /> ‣  Data type will be changed to datetime in the lambda function ([writeToS3](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/writeToS3.py)) |
  UnitPrice | ‣ Unit price in sterling <br /> ‣  float64|
- CustomerID | ‣ Uniquely assigned to each customer <br /> ‣  float64 <br /> ‣ 135080 null values included; null values will be replaced with "Unknown" in the lambda function ([test-cleaning](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test-cleaning.py)) |
+ CustomerID | ‣ Uniquely assigned to each customer <br /> ‣  float64 <br /> ‣ 135080 null values included; will be replaced with "Unknown" in the lambda function ([test-cleaning](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test-cleaning.py)) |
  Country | ‣  Name of the country where customers reside   <br /> ‣ Object type |
  
 ## Tools <a name="Tools"></a>
@@ -87,6 +87,10 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 
 ## Conclusion <a name="Conclustion"></a>
 
+There are a few things to be improved in this pipelines
+- Email notification (AWS SNS)can be applied to this pipelies to monitor updates in the stores
+- Cognito set up can be complicated when the number of users goes up 
+- 
 
 
 
