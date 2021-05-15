@@ -51,7 +51,7 @@ ecommerce data
 
 * Storage <br /> 
  ‣ S3: Store parquet data <br /> 
- ‣ Redshift: Store data and connected to Tableau or Power BI <br /> 
+ ‣ Redshift: Store data and connect to Tableau or Power BI <br /> 
  ‣ DynamoDB: Store data with two tables (Customer & Invoice tables)  <br /> 
  
 * BI analytics <br /> 
@@ -71,11 +71,11 @@ ecommerce data
 * The layout of the streaming process
 ![image](https://user-images.githubusercontent.com/56697877/118083663-34229200-b3b7-11eb-89ac-887a84044a3f.png)
 
-* Sub-process
- ‣ Data ingestion <br /> 
- ‣ Data cleaning  <br /> 
- ‣ Data processing & Storage <br /> 
- ‣ BI analytics <br />  
+* Sub-process <br />
+ &ensp;1. [Data ingestion](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/1.%20data_%20ingestion): Ingest data in CSV into AWS Kinesis through API gateway <br />
+ &ensp;2. [Data cleaning](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/2.%20data_cleaning): Clean data or change data type <br /> 
+ &ensp;3. [Data processing & Storage](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/3.%20data_processing_storage): Bring and send data from Kinesis to storage(S3 or Redshift) and process data if necessary <br /> 
+ &ensp;4. [BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/1.%20streaming/4.%20BI%20analytics): Create connections to BI tools like Tableau and Athena and Send Queries to DynamoDB <br /> 
 
 * AWS Cognito <br />
 For security, AWS congnito can be used to access API gateway with a token in this streaming process([Cognito](https://github.com/Richie-Kwon/ecommercedata/tree/main/3.%20cognito))
