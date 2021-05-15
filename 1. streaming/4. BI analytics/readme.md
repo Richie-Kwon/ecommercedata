@@ -49,7 +49,7 @@ Run [boto3.py](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20strea
 6. Get a response from DynameDB with new URL
 ![image](https://user-images.githubusercontent.com/56697877/118374170-90053a80-b5b2-11eb-994d-e24cc4e1e922.png)
 
-7. The same result can be found when running the code below
+7. The same result can be found when running the code below ([transaction.py](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/4.%20BI%20analytics/transaction.py))
 ```
 import requests
 
