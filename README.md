@@ -95,7 +95,7 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 &ensp;3. [BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/2.%20batch/3.%20BI%20analytics): Create connections to BI tools like Tableau and Zeppelin notebook<br />
 
 ## Conclusion <a name="Conclustion"></a>
-The data pieplines established can carry out ETL process and enalbe to get insights through analysis 
+The data pieplines established can carry out ETL process and enable to get insights through analysis <br />
 There are a few things to be improved in the pipelines and these things are going to be revamped 
 - Email notification (AWS SNS)can be applied to this pipelies to monitor updates in the stores
 - Cognito set up can be complicated when the number of users goes up 
