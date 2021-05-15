@@ -3,9 +3,9 @@
 ## Introduction
 The main goal is to create data pipelines to analyse ecommerce data
 
-* Establishing data pipe-lines in AWS to analyse e-commerce data with business analytics tools 
-* Two main processes - Streaming & Batcth process 
-* Python3 used in AWS lambda functions 
+* Establish data pipelines in AWS to analyse e-commerce data with business analytics tools 
+* The data pipielines cover streaming & batcth process 
+* Python3 used in AWS lambda functions to process data 
 
 ## Contents
 * [Dataset](#Dataset)
@@ -38,24 +38,24 @@ ecommerce data
 ## Tools <a name="Tools"></a>
 
 * Connect <br /> 
- ‣ API gateway - GET & POST method <br /> 
+ ‣ API gateway: POST (to ingest data) & GET (to send query to DynamoDB) method <br /> 
  
 * Buffer <br /> 
- ‣ AWS Kinesis - Data streams <br /> 
+ ‣ AWS Kinesis(Data streams) <br /> 
  
 * Processing <br /> 
- ‣ AWS Kinesis firehose - Delivery stream  <br /> 
+ ‣ AWS Kinesis firehose(Delivery stream)  <br /> 
  ‣ AWS lambda functions <br /> 
  ‣ Python3 in lambda functions <br /> 
- ‣ AWS glue - Create datacatalog in the streaming process and carry out ETL process in the batch process
+ ‣ AWS glue: Create datacatalog in the streaming process and carry out ETL between S3 and Redshift in the batch process
 
 * Storage <br /> 
- ‣ S3 - Store parquet data <br /> 
- ‣ Redshift - Store data and connected to Tableau or Power BI <br /> 
- ‣ DynamoDB - Store data with two tables (Customer & Invoice tables)  <br /> 
+ ‣ S3: Store parquet data <br /> 
+ ‣ Redshift: Store data and connected to Tableau or Power BI <br /> 
+ ‣ DynamoDB: Store data with two tables (Customer & Invoice tables)  <br /> 
  
-* BI analytics 
- ‣ Tableau - Connect to redshift <br /> 
+* BI analytics <br /> 
+ ‣ Tableau: Connect to redshift <br /> 
  ‣ AWS Athena : Connect to S3 <br /> 
  ‣ Jupyter notebook : Connect to S3 <br /> 
  ‣ Zepplin notebook: Connect to EMR in batch process <br /> 
@@ -72,6 +72,10 @@ ecommerce data
 ![image](https://user-images.githubusercontent.com/56697877/118083663-34229200-b3b7-11eb-89ac-887a84044a3f.png)
 
 * Sub-process
+ ‣ Data ingestion <br /> 
+ ‣ Data cleaning  <br /> 
+ ‣ Data processing & Storage <br /> 
+ ‣ BI analytics <br />  
 
 * AWS Cognito <br />
 For security, AWS congnito can be used to access API gateway with a token in this streaming process([Cognito](https://github.com/Richie-Kwon/ecommercedata/tree/main/3.%20cognito))
@@ -85,7 +89,8 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 * The layout of the batch process
 ![image](https://user-images.githubusercontent.com/56697877/118084976-81076800-b3b9-11eb-9ba5-87dc49c87d0a.png)
 
-* Sub-process￼￼
+
+
 
 ## Conclusion <a name="Conclustion"></a>
 
