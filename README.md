@@ -1,7 +1,7 @@
 # Creating data-pipelines with Ecommerce Data 
 
 ## Introduction
-The main goal is to create data pipelines to analyse ecommerce data
+The primary goal in this project is to create data pipelines to analyse ecommerce data
 
 * Establish data pipelines in AWS to analyse e-commerce data with business analytics tools 
 * The data pipielines cover streaming & batcth process 
@@ -15,7 +15,7 @@ The main goal is to create data pipelines to analyse ecommerce data
 * [Conclusion](#Conclustion)
 
 ## Dataset <a name="Dataset"></a>
-ecommerce data 
+Ecommerce data is used in this project and market insights can be caught by creating datapipe lines and enabling to analyse data in BI analytics tool 
 
 * Data Source: [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
 * Overview of dataset - 8 Columns and 541909 rows in CSV
@@ -95,8 +95,8 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 &ensp;3. [BI analytics](https://github.com/Richie-Kwon/ecommercedata/tree/main/2.%20batch/3.%20BI%20analytics): Create connections to BI tools like Tableau and Zeppelin notebook<br />
 
 ## Conclusion <a name="Conclustion"></a>
-
-There are a few things to be improved in this pipelines
+The data pieplines established can carry out ETL process and enalbe to get insights through analysis 
+There are a few things to be improved in the pipelines and these things are going to be revamped 
 - Email notification (AWS SNS)can be applied to this pipelies to monitor updates in the stores
 - Cognito set up can be complicated when the number of users goes up 
 
