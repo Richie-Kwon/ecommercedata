@@ -53,7 +53,7 @@
 &ensp;&ensp;&ensp;Upload jsonpaths.json (to map or detect json string object) in the S3 bucket
 
 
-&ensp;&ensp;3. Create KinesisFirehose and create connections to the Redshift<br />
+&ensp;&ensp;3. Create KinesisFirehose and connections to the Redshift<br />
 &ensp;&ensp;&ensp;   - Create a delivery stream <br />
 &ensp;&ensp;&ensp;- Configure things below <br />
 &ensp;&ensp;&ensp;‣ Source: Kinesis Data stream <br />
