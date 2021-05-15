@@ -19,7 +19,7 @@ ecommerce data
 
 * Data Source: [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
 * Overview of dataset - 8 Columns and 541909 rows in CSV
-![image](https://user-images.githubusercontent.com/56697877/118081985-4ea73c00-b3b4-11eb-80b4-40c5a9ee87dc.png)
+![image](https://user-images.githubusercontent.com/56697877/118368968-82dc5180-b59a-11eb-992f-1ecee7318ac4.png)
 
 * Column list
 
