@@ -4,9 +4,8 @@
 The main goal is to create data pipelines to analyse ecommerce data
 
 * Establishing data pipe-lines in AWS to analyse e-commerce data with business analytics tools 
-* Two main processes: Streaming & Batcth process 
+* Two main processes - Streaming & Batcth process 
 * Python3 used in AWS lambda functions 
-*  <span fontsize=10em;>cardinals</span>
 
 ## Contents
 * [Dataset](#Dataset)
@@ -19,7 +18,7 @@ The main goal is to create data pipelines to analyse ecommerce data
 ecommerce data 
 
 * Data Source: [UCI machine learning repository](http://archive.ics.uci.edu/ml/index.php)
-* Overview of dataset: 8 Columns and 541909 rows in CSV
+* Overview of dataset - 8 Columns and 541909 rows in CSV
 ![image](https://user-images.githubusercontent.com/56697877/118081985-4ea73c00-b3b4-11eb-80b4-40c5a9ee87dc.png)
 
 * Column list
@@ -33,30 +32,33 @@ ecommerce data
  Quantity | ‣  Quantity of items per transaction <br /> ‣  Int64 <br /> ‣  Less than 0 in case of cacellantion and bad debt <br /> ‣  Cacellantion and bad debt will be filterd out in the the lambda function ([test](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test.py))|
  InvoiceDate | ‣ Date and time when each transaction was made <br /> ‣  Object type <br /> ‣  Data type will be changed to datetime in the lambda function ([writeToS3](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/writeToS3.py)) |
  UnitPrice | ‣ Unit price in sterling <br /> ‣  float64|
- CustomerID | ‣ Uniquely assigned to each customer <br /> ‣  float64 <br /> ‣ 135080 null values included; will be replaced with "Unknown" in the lambda function ([test-cleaning](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test-cleaning.py)) |
+ CustomerID | ‣ Uniquely assigned to each customer <br /> ‣  float64 <br /> ‣ 135080 null values will be replaced with "Unknown" in the lambda function ([test-cleaning](https://github.com/Richie-Kwon/ecommercedata/blob/main/1.%20streaming/lambda_streaming/test-cleaning.py)) |
  Country | ‣  Name of the country where customers reside   <br /> ‣ Object type |
  
 ## Tools <a name="Tools"></a>
 
-* Connect
- ‣ API gateway 
+* Connect <br /> 
+ ‣ API gateway - GET & POST method <br /> 
  
-* Buffer
- ‣ AWS Kinesis
-
+* Buffer <br /> 
+ ‣ AWS Kinesis - Data streams <br /> 
+ 
 * Processing <br /> 
- ‣
+ ‣ AWS Kinesis firehose - Delivery stream  <br /> 
+ ‣ AWS lambda functions <br /> 
+ ‣ Python3 in lambda functions <br /> 
+ ‣ AWS glue - Create datacatalog in the streaming process and carry out ETL process in the batch process
 
-* Storage
- ‣ S3: Data in the type of parquet can be stored <br /> 
- ‣ Redshift: <br /> 
- ‣ DynamoDB:  <br /> 
+* Storage <br /> 
+ ‣ S3 - Store parquet data <br /> 
+ ‣ Redshift - Store data and connected to Tableau or Power BI <br /> 
+ ‣ DynamoDB - Store data with two tables (Customer & Invoice tables)  <br /> 
  
 * BI analytics 
- ‣ Tableau: connected to redshift <br /> 
- ‣ AWS Athena : connected to S3 <br /> 
- ‣ Jupyter notebook : connected to S3 <br /> 
- ‣ Zepplin notebook: connected to EMR in batch process <br /> 
+ ‣ Tableau - Connect to redshift <br /> 
+ ‣ AWS Athena : Connect to S3 <br /> 
+ ‣ Jupyter notebook : Connect to S3 <br /> 
+ ‣ Zepplin notebook: Connect to EMR in batch process <br /> 
 
 
 ## Streaming process <a name="Streamingprocess"></a>
@@ -90,7 +92,7 @@ For security, AWS congnito can be used to access API gateway with a token in thi
 There are a few things to be improved in this pipelines
 - Email notification (AWS SNS)can be applied to this pipelies to monitor updates in the stores
 - Cognito set up can be complicated when the number of users goes up 
-- 
+
 
 
 
